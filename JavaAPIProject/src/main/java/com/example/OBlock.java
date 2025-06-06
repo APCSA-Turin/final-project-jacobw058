@@ -2,16 +2,16 @@ package com.example;
 import java.util.ArrayList;
 
 public class OBlock extends TetrisBlock {
-    public OBlock(int rotation) {
-        super(rotation, initialize());
+    public OBlock(int rotation, int ID) {
+        super(rotation, initialize(ID), ID);
     }
-    public static ArrayList<Tile> initialize() {
+    public static ArrayList<Tile> initialize(int ID) {
         ArrayList<Tile> block = new ArrayList<Tile>();
-        block.add(new Tile("🟨", 2, false));
-        block.add(new Tile("🟨", 2, false));
+        block.add(new Tile("🟨", ID, false));
+        block.add(new Tile("🟨", ID, false));
         block.add(new Tile("⬜", 0, false));
-        block.add(new Tile("🟨", 2, true));
-        block.add(new Tile("🟨", 2, true));
+        block.add(new Tile("🟨", ID, true));
+        block.add(new Tile("🟨", ID, true));
         block.add(new Tile("⬜", 0, false));
         block.add(new Tile("⬜", 0, false));
         block.add(new Tile("⬜", 0, false));

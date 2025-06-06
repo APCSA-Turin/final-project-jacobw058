@@ -5,7 +5,7 @@ public class Tile {
     private int y;
     private String val;
     private int ID;
-   private boolean bottomTile;
+    private boolean bottomTile;
     private boolean canMoveDown;
     public Tile(String val, int ID, boolean bottomTile) {
         this.val = val;
